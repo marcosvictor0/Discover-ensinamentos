@@ -1,12 +1,10 @@
-
-         body {
-            background-color: rgb(138, 114, 167);
-            text-align:center;
-         }
-         h1,h2 {
-             color: white;
-         }
-         p {
-             color: rgba(5, 5, 5, 0.541);
-         }
-    
+body {
+    background-color: rgb(138, 114, 167);
+    text-align:center; 
+}
+h1,h2,h3 {
+    color: white;
+}
+p,li {
+    color: rgba(5, 5, 5, 0.541);
+}

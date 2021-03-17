@@ -1,0 +1,12 @@
+
+         body {
+            background-color: rgb(138, 114, 167);
+            text-align:center;
+         }
+         h1,h2 {
+             color: white;
+         }
+         p {
+             color: rgba(5, 5, 5, 0.541);
+         }
+    

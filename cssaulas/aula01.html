@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 [  23 / 03 / 2021 ]</title>
+</head>
+<body>
+    <h1>Introdução</h1>
+    <p>
+        • O que significa CSS ? <br>
+            - Cascading Style Sheet <br>
+            - Código para criar estilos no HTML <br>
+            - HTML é a estrutura, e o CSS é a beleza <br>
+            - Não é uma linguagem de programação <br>
+            - É uma linguagem style sheet <br>
+    </p>
+
+    <p>
+        Exemplos: <br>
+       html --> &lt;h1>&lt;/h1> <br>
+       css --> <pre><code> h1 { 
+           color: red;
+        } <br> </code></pre>
+
+    </p>
+
+    <h2>Comentários no CSS</h2>
+    <p>
+        • Comentários <br>
+            - Não irá afetar o seu código; <br>
+            - Ajuda a lembrar blocos de códigos; <br>
+            - Deixa dicas para leitura; <br>
+            - Ajuda outros a entenderem; <br>
+            - Nunca esqueça de fechar um comentário aberto. <br>
+
+    Comentários começam com `/*` e terminam com `*/`. <br>
+
+    ```CSS <br>
+    /* Básico */ <br>
+    /* -------------------------*/ <br>
+    body { <br>
+        font: 1em/150% Helvetica,Arial, sans-serif; <br>
+        padding: 1em; <br>
+        margin: 0 auto; <br>
+        max-width: 33em; <br>
+    }
+ <br>
+    @media (min-width: 70em) { <br>
+        body { <br>
+            font-size 130%; <br>
+        } <br>
+    }
+
+    h1 { <br>
+        font-size: 1.5em; <br>
+    }
+<br>
+    Elementos especificos  <br>
+    div p, #id: first-line { <br>
+        background-color: red; <br>
+        boder-radius: 3px; <br>
+    }
+ <br>
+    div p { <br>
+        margin: 0; <br>
+        padding: 1em; <br>
+    }
+ <br>
+    div p + p { <br>
+        padding-top: 0; <br>
+    }
+ <br>
+    • Você poderá usar para desabilitar partes do seu código <br>
+ <br>
+    ```CSS <br>
+
+    /*  <br>
+    .special { <br>
+        color: red; <br>
+    }
+    */ <br>
+    '''
+    </p>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 [ 23 / 03 / 2021 ]</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <p>
+        • Prós 
+            - Visualização de dados via linhas e colunas;
+            - Boa acessibilidade para leitura dos dados.
+
+        • Contras
+            - Pouco flexível;
+            - Precisa de estilização para melhor visualização.
+
+        • Não usar
+            - Para criar layout.
+    </p>
+
+    <h2>Exemplo de tabela</h2>
+
+    <caption>Pessoas por Idade</caption>
+
+    <table class="table">
+
+        <thead>
+            <tr> <!--seria uma linha-->
+                <th>Nome</th>
+                <th>Idade</th> <!--cabeçalho-->
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Marcos</td>
+                <td>20 anos</td>
+            </tr>
+            <tr>
+                <td>Ana Leianny</td>
+                <td>17 anos</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 Pessoas</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <h2>Exemplo de uma tabela mais complexa</h2>
+
+    <p>
+        Caso de uso :  2 Lojas , Quantos produtos foram produzidos, quantos vendidos e agrupados por nome dos produtos.
+    </p>
+    <table>
+        
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup>
+            <col  style="background-color: aqua;">
+            <col span="2" style="background-color:blue">
+            <col span="2" style="background-color:red">
+        </colgroup>
+
+        <thead>
+           <tr>
+                <th rowspan="2"></th> <!-- rowspan faz com que ele ocupe 2 linhas--> 
+                <th colspan="2" scope="colgroup" >Marisa</th> <!-- colspan faz com que ocupe 2 colunas-->
+                <th colspan="2" scope="colgroup" >C&A</th>
+           </tr>
+           <tr>
+               <th scope="col">Produzidos</th>
+               <th scope="col">Vendidos</th>
+               <th scope="col">Produzidos</th>
+               <th scope="col">Vendidos</th>
+           </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Camisetas</th>
+                <td scope="col">50</td>
+                <td scope="col">40</td>
+                <td scope="col">60</td>
+                <td scope="col">40</td>
+            </tr>
+            <tr>
+                <th scope="row">Calças</th>
+                <td scope="col">30</td>
+                <td scope="col">22</td>
+                <td scope="col">40</td>
+                <td scope="col">32</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+    </table>
+
+    <h1>Cabeçalho</h1>
+    <p>
+        &lt;head&gt;
+    </p>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+</body>
+</html>
